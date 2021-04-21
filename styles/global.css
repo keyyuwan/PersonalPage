@@ -1,0 +1,40 @@
+/* Global =============== */
+:root {
+    --dark: #121212;
+    --light-dark: #242424;
+    --purple: #3700B3;
+    --light-purple: #bb86fc;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--dark);
+    color: white;
+    padding-top: 5rem;
+
+    animation: fade 1s;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+    transition: 200ms;
+}
+
+a:hover {
+    color: var(--purple);
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.5;
+    } to {
+        opacity: 1;
+    }
+}

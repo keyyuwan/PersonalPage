@@ -1,0 +1,87 @@
+/* Responsive =============== */
+@media (max-width: 1080px) {
+    html {
+        font-size: 93.75%;
+    }
+
+    .card {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 720px) {
+    html {
+        font-size: 81.25%;
+    }
+
+    .description:first-child {
+        margin-right: 2rem;
+    }
+
+    .description:last-child {
+        margin-left: 2rem;
+    }
+
+    .card {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding-top: 10rem;
+    }
+
+    html {
+        font-size: 75%;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header ul {
+        margin-top: 1rem;
+    }
+
+    header li {
+        white-space: nowrap;
+    }
+
+    .description-box {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .description {
+        max-width: 50rem;
+    }
+
+    .description:first-child {
+        margin: 0;
+    }
+
+    .description:last-child {
+        margin: 0;
+        margin-top: 2rem;
+    }
+
+    .personal {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .personal-description p {
+        text-align: left;
+        max-width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer a {
+        margin-bottom: 1rem;
+    }
+}

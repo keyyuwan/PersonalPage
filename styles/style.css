@@ -1,0 +1,210 @@
+/* Header =============== */
+header {
+    background: var(--light-dark);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 1rem 2rem;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+header h2 {
+    font: 500 2.5rem Poppins, sans-serif;
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--purple);
+}
+
+header ul {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+}
+
+header li {
+    margin-left: 2rem;
+}
+
+header a {
+    font: 300 1.2rem Poppins, sans-serif;
+    border-bottom: 2px solid var(--purple);
+}
+
+/* Main Info =============== */
+main section.info {
+    max-width: 70%;
+    margin: 2.5rem auto;
+    text-align: center;
+}
+
+.info h1 {
+    font: 500 3rem Poppins, sans-serif;
+    letter-spacing: 1px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    animation: shorterToBig 800ms;
+}
+
+.info h1 .line {
+    background: var(--purple);
+    height: 4px;
+    width: 15%;
+}
+
+.info > p {
+    margin: 2rem 0;
+    font: 400 1.8rem Poppins, sans-serif;
+    letter-spacing: 0.8px;
+
+    animation: shorterToBig 800ms;
+}
+
+/* Main Description =============== */
+.description-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    animation: shorterToBig 800ms;
+}
+
+.description {
+    max-width: 20rem;
+    padding: 1rem;
+
+    transition: 400ms;
+}
+
+.description:hover {
+    transform: translateY(-5%);
+    transform: scale(1.1);
+    border: 2px solid var(--purple);
+}
+
+.description img {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+.description h3 {
+    font: 500 1.5rem Montserrat, sans-serif;
+    color: var(--light-purple);
+}
+
+.description p {
+    margin-top: 1rem;
+    font: 400 1.1rem Montserrat, sans-serif;
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+/* Arrow Image =============== */
+.arrow-img {
+    text-align: center;
+}
+
+.arrow-img img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: -1rem;
+
+    background: var(--purple);
+    border-radius: 8px;
+}
+
+/* Main About =============== */
+.about h1 {
+    text-align: center;
+    font: 700 6rem Montserrat, sans-serif;
+    letter-spacing: 10px;
+    margin: 2.5rem auto;
+
+    color: var(--light-purple);
+
+    transition: 200ms;
+}
+
+.about h1:hover {
+    color: var(--purple);
+    transform: translateY(-10%);
+}
+
+.card {
+    max-width: 60%;
+    margin: auto;
+    padding: 2rem 5rem;
+    border-radius: 8px;
+
+    background: var(--light-dark);
+}
+
+.card:hover {
+    border: 2px solid var(--purple);
+}
+
+.personal img {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    border: 2px solid var(--purple);
+}
+
+.personal {
+    display: flex;
+    align-items: center;
+}
+
+.personal-info {
+    margin-left: 3rem;
+}
+
+.personal-info h2 {
+    font: 500 2.3rem Poppins, sans-serif;
+    margin-top: 2rem;
+}
+
+.personal-info h4 {
+    font: 400 1rem Poppins, sans-serif;
+    color: var(--light-purple);
+    margin-top: 0.1rem;
+}
+
+.personal-description p{
+     font: 400 1.5rem Montserrat, sans-serif;
+     letter-spacing: 1px;
+     margin-top: 2rem;
+}
+
+/* Footer =============== */
+footer {
+    background: var(--light-dark);
+
+    margin-top: 5rem;
+    padding: 2rem 4rem;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer a {
+    font: 300 1.2rem Poppins, sans-serif;
+}
+
+/* Animations =============== */
+@keyframes shorterToBig {
+    from {
+        transform: scale(0.85);
+    } to {
+        transform: scale(1);
+    }
+}

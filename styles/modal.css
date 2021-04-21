@@ -1,0 +1,92 @@
+/* Modal =============== */
+.modal-overlay {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-overlay.active {
+
+    opacity: 1;
+    visibility: visible;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: rgba(0, 0, 0, 0.2);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    position: fixed;
+    background: var(--light-dark);
+
+    width: 30rem;
+    height: 20rem;
+
+    border: 1px solid var(--light-purple);
+    border-radius: 5px;
+}
+
+.modal-content {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.modal-content h2 {
+    font: 400 2rem Poppins, sans-serif;
+}
+
+.modal-content .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons a {
+    color: white;
+
+    width: 15rem;
+    height: 3.5rem;
+    font: 600 1.2rem Montserrat, sans-serif;
+
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.buttons a.whatsapp {
+    background: #04d361;
+
+    transition: 200ms;
+}
+
+.buttons a.whatsapp:hover {
+    background: #04bf58;
+}
+
+.buttons a.whatsapp img {
+    margin-left: 10px;
+}
+
+.buttons a.email {
+    border: 1px solid white;
+
+    transition: 200ms;
+}
+
+.buttons a.email:hover {
+    border-color: var(--light-purple);
+}
